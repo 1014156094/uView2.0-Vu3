@@ -7,14 +7,20 @@
 	// 		"query": "" //启动参数，在页面的onLoad函数里面得到
 	// 	}]
 	// },
+	"easycom": {
+	    "autoscan": true,
+	    "custom": {
+	      "^u-(.*)": "uni_modules/uview-ui/components/u-$1/u-$1.vue" // 匹配 uView UI 组件库
+	    }
+	  },
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/example/components",
+			"path": "pages/example/h5",
 			"style": {
 				"navigationBarTitleText": "uView UI"
 			}
 		}
-	],
+    ],
 	"subPackages": [{
 		"root": "pages/componentsA",
 		"pages": [
